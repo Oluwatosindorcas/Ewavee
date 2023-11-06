@@ -1,0 +1,165 @@
+span{
+    display: flex;
+}
+
+.h-s{
+    display: none;
+}
+
+header{
+    display: flex;
+}
+
+header > div{
+    margin: 250px 0 0 110px;
+}
+
+header > div > h1{
+    animation: showup 7s infinite;
+    color: #169944;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+header > div > p{
+    animation: slidein 7s infinite;
+    color: var(--gray-gray-4, #475467);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+header > img{
+    animation: wave 2s ease-in-out infinite;
+    height: 700px;
+}
+
+.t{
+    animation: slidein 7s infinite;
+}
+
+.a-img{
+    height: 40px;
+    width: 140px;
+    margin-left: 10px;
+}
+
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    header{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header > div{
+        margin: 30px 0 0 0;
+    }
+
+    header > div> h1{
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    header > div > p{
+        display: none;   
+    }
+
+    header > img{
+        height: 400px;
+        margin: 0 130px 0 0;
+    }
+
+    .h-s{
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+    header{ 
+        flex-direction: column;
+    }
+
+    header > div{
+        margin: 50px 0 0 60px;
+    }
+
+    header > div > h1{
+        font-size: 65px;
+    }
+
+    header > div > p{
+        font-size: 18px;
+    }
+
+    header > img{
+        align-self: center;
+        height: 700px;
+        margin: 0 140px 0 -40px;
+        width: 700px;       
+    }
+
+    .g-img{
+        height: 55px;
+        width: 170px;
+    }
+
+    .a-img {
+        height: 55px;
+        width: 170px;
+    }
+}

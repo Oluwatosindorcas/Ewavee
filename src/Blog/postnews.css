@@ -1,0 +1,55 @@
+/* PostNews.css */
+.container {
+  margin: 3rem 10rem;
+}
+
+textarea {
+  width: auto;
+  height: 350px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select-category {
+  width: 100%; /* Set the width to 100% to match the form's width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.post-button {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+
+  /* Hover effect */
+  &:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+}

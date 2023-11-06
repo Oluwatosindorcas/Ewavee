@@ -1,0 +1,22 @@
+.text{
+    color: #169944;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+.span{
+    display: inline;
+}
+
+
+@media (max-width: 767px) {
+    .text{
+        margin: 30px 0 30px;
+    }
+
+    .span {
+        display: block;
+    }
+}

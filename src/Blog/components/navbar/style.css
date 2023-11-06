@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  font-family: "Montserrat";
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+  color: #000;
+  font-size: 1.5rem;
+}
+.navbar-logo p {
+  display: inline-flex;
+  padding-right: 10px;
+}
+/*to remover the line underthev logo when i hover, anchor tag have uderline under and logo has anchor tag */
+.navbar-logo a:hover::before {
+  width: 0%;
+}
+.menu-icon {
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 3.7rem;
+  left: 0px;
+  background-color: #004643;
+  transition: all 0.5s;
+  z-index: 99;
+  padding: 1rem 0;
+}
+.menu-item {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  /* letter-spacing: 0.15rem; */
+  line-height: 1.4rem;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+.menu-item a {
+  color: #000;
+}
+.menu-item a.active {
+  color: #045334 !important;
+  opacity: 0.5;
+  font-weight: 700;
+}
+.open {
+  display: none;
+}
+.download-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    justify-content: space-around;
+  }
+  .menu {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+    padding: 0;
+  }
+  .menu-item {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .menu .hidden {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+}

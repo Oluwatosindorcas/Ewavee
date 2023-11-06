@@ -1,0 +1,49 @@
+.tile{
+    align-items: last baseline;
+    display: flex;
+    line-height: 0;
+}
+
+.tile > img{
+    height: 15px;
+    margin-right: 5px;
+}
+
+.tile > h5{
+    color: #169944;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.tile-p{
+    font-weight: 400;
+    width: 350px;
+}
+
+@media (max-width: 767px) {
+    .ti{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tile > h5 {
+        font-size: 17px;
+    }
+
+    .tile-p {
+        font-size: 15px;
+        font-weight: 500;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+    .tile > h5{
+        font-size: 20px;
+    }
+
+    .tile-p{
+        font-size: 18px;
+    }
+}

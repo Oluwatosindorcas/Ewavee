@@ -1,0 +1,47 @@
+main > h1{
+    color: var(--green-green-4, #08A669);
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+
+main > div{
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    main{
+        align-items: center;
+        justify-content: center;
+    }
+
+    main > h1{
+        font-size: 47px;
+    }
+
+    main > div{
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+    main {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main>h1 {
+        font-size: 55px;
+    }
+
+
+    main > div{
+        align-items: center;
+        flex-direction: column;
+        flex-shrink: 0;
+        justify-self: center;
+    }
+}

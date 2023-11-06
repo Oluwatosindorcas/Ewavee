@@ -1,0 +1,65 @@
+nav{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    margin: 20px 0 0 50px;  
+    
+@media (max-width:767px) {
+        display: none;
+    }
+
+@media (min-width: 767px) and (max-width: 1023px){
+        margin: 25px 0 0 0;
+}
+}
+
+nav > img{
+    height: 20px;
+
+@media (max-width:767px) {
+        height: 16px;
+        width: 15px; 
+    }
+
+@media (min-width: 767px) and (max-width: 1023px) {
+        margin: 0 0 0 20px;
+    }
+}
+
+nav > ul{
+    align-items: flex-start;
+    display: flex;
+    font-weight: 400;
+    gap: 75px;
+    list-style-type: none;
+    margin-left: 40px;
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+}
+}
+
+nav > button{
+    align-items: flex-start;
+    border-radius: 5px;
+    border: 1px solid var(--green-green-4, #08A669);
+    background: var(--green-green-4, #08A669);
+    color: var(--gray-gray-1, #FCFCFD);
+    font-weight: 700;
+    gap: 8px;
+    margin-left: 80px;
+    padding: 10px 10px 10px 10px;
+
+@media (min-width: 767px) and (max-width: 1023px) {
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+nav > button:hover{
+    background-color: var(--green-green-4, #045334);
+    transition: all 0.2s ease-in-out;
+}
+
